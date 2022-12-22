@@ -1,0 +1,54 @@
+.entrance{
+    background: url('./assests/entrancebg.jpg');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    color: white;
+    font-size: 3rem;
+}
+.btn{
+        cursor: pointer;
+        font: inherit;
+        border: none;
+        background-color: #a263eb;
+        color: white;
+        padding: 0.75rem 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 25px;
+        font-weight: bold;
+        margin: 50px;
+      
+}
+.button{
+        cursor: pointer;
+        font: inherit;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 25px;
+        margin: 2% 0%;
+}
+.btn:hover,
+.btn:active {
+  background-color: #2c0337;
+}
+.button:hover,
+.button:active {
+  background-color: green;
+}
+.form{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form h2{
+  color: red;
+}
