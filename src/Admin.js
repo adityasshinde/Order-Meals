@@ -4,7 +4,7 @@ import HeaderAd from './Component_Admin/HeaderAd';
 import Modal from './Components/UI/Modal';
 import AddItem from './Component_Admin/AddItem';
 import AddAvailabilityProvider from './Context/addAvailabilityProvider';
-import AvailableMeals from './Components/Meals/AvailableMeals';
+import Meals from './Components/Meals/Meals';
 
 
 const Admin=(props)=>{
@@ -25,8 +25,7 @@ const Admin=(props)=>{
           {isFormShown && <Modal>
             <AddItem onAddAvailableItem={addAvailabelItemHandler} onCancel={cancelHandler} />
             </Modal>}
-          <AvailableMeals></AvailableMeals>
-          <button onClick={props.onSeeCustomer}>See Customers Page</button>
+          <Meals></Meals>
           </AddAvailabilityProvider>
 }
 

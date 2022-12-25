@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import App from './App';
 import classes from './Entrance.module.css';
 import Modal from "./Components/UI/Modal";
 import Admin from "./Admin";
 
 const Entrance=props=>{
+  console.log('control in entrance');
    const [userEntered,setUserEntered]= useState();
    const [isAdmin,setIsAdmin]= useState(false);
    const [isVarified,setIsVarified]=useState(false);
@@ -13,15 +14,14 @@ const Entrance=props=>{
     const enterInAdmin=()=>{
         setIsVarified(true);
     };
+    const nevigateHandler=()=>{
+      setIsVarified(false);
+    };
     const enterToCustomer=()=>{
         setUserEntered(true);
         setIsCustomer(true);
     };
-    const seeCustomerHandler=()=>{
-      setUserEntered(true);
-      setIsCustomer(true);
-      setIsAdmin(false);
-    };
+
     const passwordHandler=event=>{
         setPassword(event.target.value);
     };
@@ -34,9 +34,15 @@ const Entrance=props=>{
                 setIsVarified(false);
               }
               else{
-                alert("Please Enter a Valid password");
+                alert("Invalid password !!!");
+              setIsVarified(false);
                 return;
               }
+    };
+    const seeCustomerHandler=()=>{
+      setUserEntered(true);
+      setIsCustomer(true);
+      setIsAdmin(false);
     };
     const entrance=`${!userEntered && classes.entrance}`;
     return <div className={entrance}>
@@ -47,11 +53,11 @@ const Entrance=props=>{
                <button  className={classes.btn} onClick={enterToCustomer}>Enter as Customer</button>
                </div>}
                {isVarified &&
-                    <Modal>
+                    <Modal onClick={nevigateHandler}>
                       <form className={classes.form}>
                         <h2>Authentication Required !!!</h2>
                     <label>Enter Password : </label>
-                    <input type='password' onChange={passwordHandler}/>
+                    <input type='password' className={classes.input} onChange={passwordHandler}/>
                     <button  className={classes.button} onClick={passwordSubmitHandler}>Submit</button>
                     </form></Modal>}
               {isCustomer && <App />};

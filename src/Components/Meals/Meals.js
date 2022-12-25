@@ -3,11 +3,11 @@ import AvailableMeals from "./AvailableMeals";
 import MealsSummary from "./MealsSummary";
 
 const Meals=()=>{
- 
+    console.log('Control in Meals.js')
     return <React.Fragment>
         <MealsSummary />
         <AvailableMeals />
     </React.Fragment>
 };
 
-export default Meals;
+export default React.memo(Meals);

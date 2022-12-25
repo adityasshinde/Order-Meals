@@ -10,6 +10,10 @@
     color: white;
     font-size: 3rem;
 }
+.input{
+  padding: 3px;
+  border-radius: 7px;
+}
 .btn{
         cursor: pointer;
         font: inherit;

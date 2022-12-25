@@ -14,7 +14,7 @@ function App() {
   const hideCartHandler=()=>{
     setIsCartShown(false);
   };
-  console.log()
+  console.log('Control in App.js')
   return <CartProvider>
           {isCartShown && <Cart onHideCart={hideCartHandler} />}
           <Header onShownCart={cartShownHandler}></Header>
