@@ -1,8 +1,7 @@
+import React,{ useState } from 'react';
 import classes from './AvailableMeals.module.css';
 import Card from '../UI/Card';
 import MealItem from './MealItems/MealItem';
-import React,{ useState } from 'react';
-
 
 
 const AvailableMeals=props=>{
