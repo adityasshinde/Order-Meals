@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/adityasshinde/Order-Meals/precache-manifest.5be7f7e96914ecee2831a5664e33e07f.js"
+  "/Order-Meals/precache-manifest.76372a7a932b8cfe490ffbb095bf6c58.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/adityasshinde/Order-Meals/index.html", {
+workbox.routing.registerNavigationRoute("/Order-Meals/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
