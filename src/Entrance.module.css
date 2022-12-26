@@ -56,3 +56,16 @@
 .form h2{
   color: red;
 }
+@media(max-width:768px){
+  .entrance{
+    background: url('./assests/entrancebgMob.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .h1{
+    color:white;
+    font-size: 2.4rem;
+    margin-left: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+}

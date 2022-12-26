@@ -13,8 +13,14 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
   }
+  .title{
+    display: flex;
+    height: 100%;
+  }
   .header h1{
-    margin: 60px;
+    margin: 0px 60px;
+    margin-top: 15px;
+    margin-left: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
@@ -25,17 +31,21 @@
     overflow: hidden;
   }
   
-  .main-image img {
+  .ima {
     width: 110%;
     height: 100%;
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
   }
-
+.icon{
+  margin: 0px;
+  padding: 0px;
+}
   @media(max-width:768px){
     .header h1{
       margin: 10px;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
+      margin-top: 15px;
     }
     .header{
       height: 4rem;
@@ -45,5 +55,8 @@
       height: 25rem;
       z-index: 0;
       overflow: hidden;
+    }
+    .title{
+      width: 70%;
     }
   }
